@@ -1,0 +1,23 @@
+.footer {
+  padding: 40px 20px;
+  color: white;
+  background: black;
+  text-align: center;
+}
+
+.footer h3 {
+  font-family: "Archivo", sans-serif;
+  font-size: 1rem;
+}
+
+.foot_nav > nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 16px;
+}
+
+.foot_nav > nav li a {
+  color: white;
+  font-size: 1rem;
+}

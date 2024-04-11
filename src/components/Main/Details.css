@@ -1,0 +1,145 @@
+.detail_section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  border-bottom: 2px solid black;
+}
+
+.detail_section h3 {
+  font-family: "DM Serif Display", serif;
+  font-weight: bold;
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  margin-top: 25px;
+}
+
+.recreate ul {
+  display: inline-block;
+  text-align: justify;
+  font-family: "Archivo", sans-serif;
+  padding-bottom: 20px;
+}
+
+.recreate ul li {
+  list-style-type: circle;
+  list-style-position: outside;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.palette {
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+}
+
+.colors {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.colors > div {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.colors div .white,
+.colors div .black,
+.colors div .silver,
+.colors div .gold {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.colors div .white > div,
+.colors div .black > div,
+.colors div .silver > div,
+.colors div .gold > div {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid silver;
+  background-color: white;
+}
+
+.colors div .black > div {
+  background-color: black;
+}
+
+.colors div .silver > div {
+  background-color: #7f7f7f;
+}
+
+.colors div .gold > div {
+  background-color: #e8e5e480;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  gap: 8px;
+
+  padding: 0px 0px 0px 24px;
+  width: 90%;
+  margin: auto;
+}
+
+.text a {
+  text-decoration: underline;
+  color: black;
+
+  font-family: "Archivo", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.text a:hover {
+  color: blue;
+}
+
+@media (max-width: 800px) {
+  .detail_section {
+    grid-template-columns: repeat(1, 1fr);
+    text-align: start;
+  }
+
+  .recreate {
+    border-bottom: 2px solid black;
+    padding-left: 15px;
+  }
+
+  .recreate ul {
+    padding-left: 18px;
+  }
+
+  .palette {
+    border-right: none;
+    border-left: none;
+    border-bottom: 2px solid black;
+    padding: 15px;
+  }
+
+  .colors {
+    align-items: start;
+    justify-content: start;
+    /* gap: 30px; */
+  }
+
+  .colors > div {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .resource {
+    padding: 0px 0px 15px 15px;
+  }
+
+  .text {
+    padding: 0;
+    width: auto;
+  }
+}

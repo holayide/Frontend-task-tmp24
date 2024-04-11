@@ -1,0 +1,26 @@
+.ref_wrapper {
+  background-color: #f9f9f9;
+}
+
+.ref {
+  width: 100%;
+
+  width: 100%;
+  margin: auto;
+  display: block;
+  padding: 30px;
+}
+
+.ref img {
+  width: 100%;
+
+  box-shadow: rgb(227, 225, 225) 1px 2px 51px 20px;
+  border-radius: 15px;
+}
+
+.ref_wrapper > h2 {
+  font-family: "DM Serif Display", serif;
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 50px 0px 0px;
+}

@@ -1,0 +1,77 @@
+.container {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: white;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 10px 0px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.header > h1 {
+  font-family: "DM Serif Display", serif;
+  color: #333333;
+  font-size: 1.8rem;
+}
+
+.header > h1:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li {
+  display: inline-block;
+  gap: 15px;
+}
+
+nav ul li a {
+  color: rgb(51, 51, 51);
+  font-weight: 600;
+  transition: color 0.2s ease 0s;
+  font-size: 1.2rem;
+  font-family: "Archivo", sans-serif;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.menuImage {
+  display: none;
+}
+
+.container hr {
+  border: 2px solid black;
+}
+
+@media (max-width: 1300px) {
+  .header {
+    padding: 10px 36px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* .header {
+    background-color: blue;
+  } */
+
+  nav {
+    display: none;
+  }
+
+  .menuImage {
+    display: block;
+  }
+}
